@@ -35,6 +35,13 @@ TCN (Temporal Convolutional Network):
 3. Global average pooling followed by a fully connected layer for classification.
 
 
+Accuracy:
+```
+dataset1 on x-rays: 98.79%
+dataset2 on x-rays: 99.83%
+dataset3 on CT, MRI, X-rays: 80.20%
+```
+
 Datasets:
 1. https://www.kaggle.com/code/prasadchaskar/bone-fracture-detection-97-accuracy-cnn/input
 
