@@ -132,3 +132,6 @@ for epoch in range(num_epochs):
 model_path = '/content/drive/MyDrive/Hybrid_model_vit_tcn.pth'
 torch.save(model.state_dict(), model_path)
 print(f'Model saved at {model_path}')
+
+
+
