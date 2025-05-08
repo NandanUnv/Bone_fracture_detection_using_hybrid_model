@@ -1,4 +1,5 @@
-Bone Fracture Classification using ViT + TCN
+# Bone Fracture Classification using ViT + TCN
+
 This project implements a hybrid deep learning model that combines a Vision Transformer (ViT) and a Temporal Convolutional Network (TCN) for binary classification of bone fractures in X-ray images.
 
 The training is done using PyTorch and utilizes Google Colab with Google Drive integration for dataset management and model saving.
@@ -32,4 +33,31 @@ TCN (Temporal Convolutional Network):
 2. 1D convolution layers process these features.
 
 3. Global average pooling followed by a fully connected layer for classification.
+
+
+Datasets:
+1. https://www.kaggle.com/code/prasadchaskar/bone-fracture-detection-97-accuracy-cnn/input
+
+2. https://www.kaggle.com/datasets/vuppalaadithyasairam/bone-fracture-detection-using-xrays
+
+3. https://ribfrac.grand-challenge.org/
+
+
+Dataset Structure preferred:
+```
+Bone_Fracture_Binary_Classification/
+│
+├── train/
+│   ├── Fractured/
+│   └── Normal/
+│
+├── val/
+│   ├── Fractured/
+│   └── Normal/
+│
+└── test/
+    ├── Fractured/
+    └── Normal/
+```
+
 
