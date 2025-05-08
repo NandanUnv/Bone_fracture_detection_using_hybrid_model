@@ -129,9 +129,31 @@ for epoch in range(num_epochs):
     print(f"Epoch {epoch+1}/{num_epochs}, Train Loss: {avg_train_loss:.4f}, Val Loss: {avg_val_loss:.4f}")
 
 # Save Model to Google Drive
-model_path = '/content/drive/MyDrive/Hybrid_model_vit_tcn.pth'
+model_path = 'name_your_model'
 torch.save(model.state_dict(), model_path)
 print(f'Model saved at {model_path}')
 
 
 
+
+#testing model
+# Load Model for Testing
+model.load_state_dict(torch.load('path_of_saved_model'))
+model.eval()
+
+# Testing Loop
+def test_model(model, test_loader):
+    correct = 0
+    total = 0
+    with torch.no_grad():
+        for images, labels in test_loader:
+            images, labels = images.cuda(), labels.cuda()
+            outputs = model(images)
+            _, predicted = torch.max(outputs, 1)
+            total += labels.size(0)
+            correct += (predicted == labels).sum().item()
+    accuracy = 100 * correct / total
+    print(f'Test Accuracy: {accuracy:.2f}%')
+
+# Run Testing
+test_model(model, test_loader)
