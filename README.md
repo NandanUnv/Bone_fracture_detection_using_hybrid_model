@@ -12,7 +12,7 @@ Project Overview:
 
 3. Dataset Format: Image folder structure
 
-4. Platform: Google Colab
+4. Platform: Google Colab / PyCharm
 
 5. Framework: PyTorch + timm
    
