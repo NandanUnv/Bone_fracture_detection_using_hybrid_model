@@ -67,4 +67,12 @@ Bone_Fracture_Binary_Classification/
     └── Normal/
 ```
 
+Web interface using Flask:
+
+![image](https://github.com/user-attachments/assets/2a0867bb-a975-4b9f-851b-d75f39a519af)
+
+
+
+![image](https://github.com/user-attachments/assets/f928a2cf-f4b4-4bfd-80a7-151ca565bbe2)
+
 
