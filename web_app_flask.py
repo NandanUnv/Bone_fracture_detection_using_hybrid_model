@@ -93,14 +93,14 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-  return render_template('bone_fracture.html')
+  return render_template('index.html')
 
 @app.route('/submit', methods=['POST'])
 def submit():
     if request.method == 'POST':
       f = request.files['img']
       model_prediction = model_pred(f)
-      return render_template('bone_fracture.html', prediction = model_prediction)
+      return render_template('index.html', prediction = model_prediction)
 
 
 if __name__ == '__main__':
