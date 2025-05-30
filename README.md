@@ -4,7 +4,7 @@ This project implements a hybrid deep learning model that combines a Vision Tran
 
 The training is done using PyTorch and utilizes Google Colab with Google Drive integration for dataset management and model saving.
 
-Developed web interface(Flask) using web_app_flask.py and index.html files on saved hybrid model. 
+Developed web interface(Flask) using "web_app_flask.py" and "index.html" files on saved hybrid model. 
 
 
 Project Overview:
@@ -52,7 +52,7 @@ Datasets:
 3. https://ribfrac.grand-challenge.org/
 
 
-Dataset Structure preferred:
+Dataset structure preferred:
 ```
 Bone_Fracture_Binary_Classification/
 │
